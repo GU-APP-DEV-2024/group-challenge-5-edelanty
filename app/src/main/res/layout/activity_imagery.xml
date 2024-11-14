@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Longitude:"/>
+        <EditText
+            android:id="@+id/longitudeEditText"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Longitude"
+            android:inputType="text"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Latitude:"/>
+        <EditText
+            android:id="@+id/latitudeEditText"
+            android:layout_weight="1"
+            android:hint="Enter Latitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dimension:"/>
+        <EditText
+            android:id="@+id/dimensionEditText"
+            android:layout_weight="1"
+            android:hint="Enter Dimension"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date:"/>
+        <EditText
+            android:id="@+id/dateEditText"
+            android:layout_weight="1"
+            android:hint="Enter Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cloud Score:"/>
+        <EditText
+            android:id="@+id/cloudScoreEditText"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:hint="Enter Cloud Score"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="Get Image" >
+    </Button>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+</LinearLayout>
