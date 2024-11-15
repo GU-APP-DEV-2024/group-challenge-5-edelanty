@@ -33,13 +33,12 @@ class ImageryActivity : AppCompatActivity() {
         val imageDimension = findViewById<EditText>(R.id.dimensionEditText)
         val imageDate = findViewById<EditText>(R.id.dateEditText)
         val imageCloudScore = findViewById<EditText>(R.id.cloudScoreEditText)
-        val imageButton = findViewById<Button>(R.id.getImageButton)
+        val getImageButton = findViewById<Button>(R.id.getImageButton)
 
-        imageButton.setOnClickListener {
+        val hardCodedInfo = "https://api.nasa.gov/planetary/earth/imagery?lon=$imageLongitude&lat=$imageLatitude&date=$imageDate&api_key=${BuildConfig.NASA_API_KEY}"
+
+        getImageButton.setOnClickListener {
             //TODO do stuff
         }
-
-
-
     }
 }
